@@ -10,7 +10,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Application-Frameworks?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
-  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishanuutta2007?label=Follow" /></a>
 </p>
 
 ---
@@ -30,7 +30,7 @@ Whether you are a data scientist transforming Jupyter notebooks into shareable p
 - [💻 Open-Source Data Application Frameworks](#-open-source-data-application-frameworks)
 - [🧭 Architectural Decision Matrix: Which Tool to Choose?](#-architectural-decision-matrix-which-tool-to-choose)
 - [🤝 How to Contribute](#-how-to-contribute)
-- [⭐ Star History](#-star-history)
+- [⭐ Star History](#--star-history)
 - [💖 Support](#-support)
 - [📜 License & Community Guidelines](#-license--community-guidelines)
 
@@ -312,7 +312,7 @@ Contributions are welcome from the global developer and data science community!
 
 ---
 
-## ⭐ Star History
+##  Star History
 
 [![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Data-Application-Frameworks&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Data-Application-Frameworks&type=date&legend=top-left)
 
