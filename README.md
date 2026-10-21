@@ -278,3 +278,115 @@ If this project saves you time or helps your team choose the right data applicat
 - ⭐ **Star this repository** if you found it useful for navigating the modern data application landscape!
 # Awesome-Data-Application-Frameworks
 
+# Top Data Application Frameworks Ecosystem
+
+**Curated List of SaaS Products & Open-Source GitHub Projects**  
+*Focused on Interactive Data Apps, Dashboards, ML Demos & Internal Tools*  
+**Last updated: October 2026**
+
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Data Application Frameworks**. These tools enable developers and data scientists to build interactive web applications, dashboards, and internal tools from Python, R, or SQL code with minimal frontend effort.
+
+**Examples** include Streamlit, Dash Enterprise, Shiny Server, Gradio, Voila, Anvil, Panel, Retool, Metabase, and Apache Superset (the category leaders).
+
+**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom deployment, and transparent data app development — ideal for data teams, researchers, and developers building production-ready analytics applications without vendor lock-in. The open-source ecosystem spans Python-native frameworks (Streamlit, Dash, Gradio, Panel, Shiny), notebook-to-app converters (Voilà), low-code internal tool builders (Windmill, Appsmith), and BI platforms (Metabase, Superset).
+
+Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+
+## Table of Contents
+- [SaaS/Hosted Platforms](#saas-hosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+## SaaS/Hosted Platforms
+
+- **[Streamlit (Community Cloud)](https://streamlit.io/cloud)**  
+  Hosted deployment platform for Streamlit apps with free tier for public apps and paid options for private deployment.
+
+- **[Dash Enterprise](https://plotly.com/dash/)**  
+  Commercial platform from Plotly for deploying, scaling, and managing Dash applications with authentication, Kubernetes scaling, and app management .
+
+- **[Shiny Server / Posit Connect](https://posit.co/products/enterprise/connect/)**  
+  Commercial hosting and management platform for Shiny applications with advanced authentication, scheduling, and multi-content support .
+
+- **[Gradio (Hugging Face Spaces)](https://huggingface.co/spaces)**  
+  Primary SDK for Hugging Face Spaces; free hosting for ML demos with automatic API access and MCP server exposure for LLM tool integration .
+
+- **[Anvil](https://anvil.works/)**  
+  Full-stack web app builder for Python with hosted deployment; runtime and app server are open source, but the hosted service and editor are proprietary .
+
+- **[Panel (HoloViz Cloud)](https://holoviz.org/)**  
+  Commercial hosting for Panel applications from the HoloViz ecosystem, with enterprise deployment options.
+
+- **[Retool](https://retool.com/)**  
+  Low-code platform for building internal tools with drag-and-drop UI, database connections, and workflow automation. Proprietary and closed source .
+
+- **[Metabase Cloud](https://www.metabase.com/cloud/)**  
+  Hosted version of the open-source Metabase BI platform with managed infrastructure and support.
+
+- **[Apache Superset (Preset)](https://preset.io/)**  
+  Managed Superset service from Preset, offering cloud-hosted BI and data exploration without self-managed infrastructure.
+
+## Open-Source GitHub Projects
+
+- **[Streamlit](https://github.com/streamlit/streamlit)**  
+  The fastest way to build and share data apps in pure Python. Script reruns on every interaction, making it ideal for rapid prototyping and internal tools. Apache 2.0 licensed with 46k+ stars . Best for quick ML demos and simple dashboards .
+
+- **[Dash (Plotly)](https://github.com/plotly/dash)**  
+  Analytical web apps for Python, R, and Julia. Built on Flask and React with explicit callback architecture for production-grade, highly customized dashboards. Steeper learning curve but superior control over layout and state . Includes background callbacks and Celery support for long-running tasks .
+
+- **[Gradio](https://github.com/gradio-app/gradio)**  
+  Build and share ML demos in just a few lines of Python. Primary SDK for Hugging Face Spaces with built-in queuing, streaming, and chatbot interfaces. Apache 2.0 licensed . Less suited for general-purpose analytics dashboards than Streamlit or Dash .
+
+- **[Shiny for Python / Shiny for R](https://github.com/posit-dev/py-shiny)**  
+  Reactive web framework from Posit (formerly RStudio), originally in R and now available for Python. Formal reactive model minimizes rerendering and scales better than Streamlit for stateful applications . Open-source Shiny Server enables on-premises hosting .
+
+- **[Panel (HoloViz)](https://github.com/holoviz/panel)**  
+  Powerful data exploration and web app framework for Python from the HoloViz ecosystem. BSD-3-Clause licensed with 5,700+ stars . Integrates tightly with Bokeh, HoloViews, and other visualization libraries for complex dashboards.
+
+- **[Voilà](https://github.com/voila-dashboards/voila)**  
+  Turns Jupyter notebooks into standalone web applications by rendering outputs and hiding code cells. Ideal for sharing analysis results as interactive dashboards without rewriting in a framework.
+
+- **[Metabase](https://github.com/metabase/metabase)**  
+  Easy-to-use open-source BI and embedded analytics tool. Lets non-technical users explore data and build dashboards without SQL. Clojure-based with 41k+ stars and active development .
+
+- **[Apache Superset](https://github.com/apache/superset)**  
+  Modern, enterprise-ready BI web application from Apache. Features no-code chart builder, SQL editor, semantic layer, and support for nearly any SQL database. Cloud-native architecture designed for scale .
+
+- **[Windmill](https://github.com/windmill-labs/windmill)**  
+  Fully open-source alternative to Retool for building internal tools and UIs. Supports JavaScript, TypeScript, Python, Go, SQL, and Bash. Includes workflow engine, CLI, and VS Code integration. Self-hostable with transparent pricing .
+
+- **[Appsmith](https://github.com/appsmithorg/appsmith)**  
+  Open-source low-code platform for building internal tools with drag-and-drop UI, API/database connections, and JavaScript logic. Self-hosted alternative to Retool and Power Apps.
+
+- **[ToolJet](https://github.com/ToolJet/ToolJet)**  
+  Open-source low-code framework for building business applications and internal tools. Connects to databases, APIs, and cloud storage with a visual app builder.
+
+### Additional Strong Open-Source Options
+
+- **Anvil App Server** — The open-source runtime that serves Anvil apps on your own infrastructure, while the hosted service and editor remain proprietary .
+- **Streamlit Components** — Community-built extensions for maps, charts, authentication, and more via the Streamlit Components ecosystem.
+- **Dash Cytoscape / Dash Bootstrap Components** — Specialized Dash libraries for network graphs and responsive layouts.
+- **ShinyProxy** — Open-source tool to deploy Shiny apps using containers onto on-premises or cloud servers .
+- **Jupyter + Voilà + JupyterHub** — Stack for turning notebooks into multi-user hosted apps with authentication.
+- **Frameworks for building custom systems**: Combine **Streamlit** or **Dash** for the UI layer with **Metabase** or **Superset** for BI, and orchestrate with **Windmill** for workflow automation.
+
+## How to Contribute
+
+1. Fork the repo.
+2. Add/edit entries in `README.md` (follow existing format).
+3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
+4. Submit PR with a short explanation.
+
+Star the repo if you find it useful!
+
+## Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not an endorsement.
+- Data application frameworks vary in production readiness; evaluate security, scalability, and maintenance requirements for your use case.
+- Self-hosted open-source solutions require proper infrastructure management, authentication, and backup strategies.
+
+---
+
+**Made for data scientists, analytics engineers, ML practitioners, and full-stack developers.**  
+Let's make data application development more open, accessible, and powerful.
