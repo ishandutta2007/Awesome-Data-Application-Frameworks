@@ -276,3 +276,5 @@ If this project saves you time or helps your team choose the right data applicat
 - Distributed under the **MIT License**. See [LICENSE](file:///C:/Users/ishan/Documents/Projects/Awesome-Data-Application-Frameworks/LICENSE) for more details.
 - When handling production datasets, always ensure compliance with enterprise privacy standards (GDPR, HIPAA, SOC 2).
 - ⭐ **Star this repository** if you found it useful for navigating the modern data application landscape!
+# Awesome-Data-Application-Frameworks
+
