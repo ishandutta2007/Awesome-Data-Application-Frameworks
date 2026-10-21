@@ -30,6 +30,8 @@ Whether you are a data scientist transforming Jupyter notebooks into shareable p
 - [💻 Open-Source Data Application Frameworks](#-open-source-data-application-frameworks)
 - [🧭 Architectural Decision Matrix: Which Tool to Choose?](#-architectural-decision-matrix-which-tool-to-choose)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [⭐ Star History](#star-history)
+- [💖 Support](#-support)
 - [📜 License & Community Guidelines](#-license--community-guidelines)
 
 ---
@@ -242,6 +244,30 @@ Contributions are welcome from the global developer and data science community!
    - For SaaS products, include the company size, starting tier price, and specific free tier / trial boundaries.
    - For open-source projects, include the live social GitHub stars badge linking to the stargazers page.
 4. 📬 **Submit a Pull Request** with a descriptive summary of your additions.
+
+---
+
+##  Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Data-Application-Frameworks&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Data-Application-Frameworks&type=date&legend=top-left)
+
+---
+
+## 💖 Support
+
+A huge thank you to everyone exploring, using, and building with **Awesome Data Application Frameworks**! 🚀
+
+If this project saves you time or helps your team choose the right data application stack, please consider supporting the project:
+- ⭐ **Star this repository** to boost visibility and help others discover it.
+- 🍴 **Fork the repo** and contribute new tools, updates, or corrections.
+- 📢 **Share it** with colleagues, data teams, and communities on LinkedIn, X, or Discord.
+- ☕ **Buy me a coffee**: If you'd like to support ongoing curation and maintenance, consider sponsoring via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white" alt="Sponsor ishandutta2007" />
+  </a>
+</p>
 
 ---
 
