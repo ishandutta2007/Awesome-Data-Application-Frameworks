@@ -67,7 +67,7 @@ The following table benchmarks managed cloud deployment platforms, visual builde
 
 Below is the comprehensive, community-curated collection of leading open-source frameworks for developing interactive data applications, dashboards, reactive web interfaces, and business intelligence platforms. 
 
-All repositories are **sorted descending by live GitHub Stars_Counts**, featuring a live social Stars_Badge linking directly to each repository's stargazers community.
+All repositories are **sorted descending by live GitHub_Stars_Counts**, featuring a live social Stars_Badge linking directly to each repository's stargazers community.
 
 ---
 
