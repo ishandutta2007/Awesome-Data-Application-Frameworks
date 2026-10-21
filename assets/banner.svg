@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a13" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Accent Beam Gradient -->
+    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Subtle Glow for Text -->
+    <filter id="textGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0284c7" flood-opacity="0.45" />
+    </filter>
+
+    <style>
+      .title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 800;
+        font-size: 46px;
+        letter-spacing: -0.5px;
+      }
+      .subtitle {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+        fill: #94a3b8;
+        letter-spacing: 0.2px;
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      /* Animated Elements */
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(1deg); }
+      }
+      @keyframes floatFast {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-16px) rotate(-1.5deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.08); }
+      }
+      @keyframes waveFlow {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -1200; }
+      }
+      @keyframes beamSlide {
+        0% { transform: translateX(-600px); }
+        100% { transform: translateX(1200px); }
+      }
+
+      .floating-card-1 {
+        animation: floatSlow 7s ease-in-out infinite;
+      }
+      .floating-card-2 {
+        animation: floatFast 6s ease-in-out infinite 1s;
+      }
+      .floating-card-3 {
+        animation: floatSlow 8s ease-in-out infinite 2s;
+      }
+      .pulse-orb {
+        animation: pulseGlow 5s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .wave-line {
+        stroke-dasharray: 12, 12;
+        animation: waveFlow 30s linear infinite;
+      }
+      .laser-beam {
+        animation: beamSlide 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="380" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Outer Border Stroke -->
+  <rect width="1198" height="378" x="1" y="1" rx="15" fill="none" stroke="#334155" stroke-opacity="0.4" stroke-width="1.5" />
+
+  <!-- BACKGROUND DYNAMIC ELEMENTS (Z-INDEX: LOW) -->
+  <g id="dynamic-background" opacity="0.85">
+    <!-- Ambient Glowing Orbs -->
+    <circle cx="180" cy="80" r="140" fill="#38bdf8" opacity="0.12" filter="url(#glow)" class="pulse-orb" />
+    <circle cx="1020" cy="280" r="160" fill="#a855f7" opacity="0.12" filter="url(#glow)" class="pulse-orb" />
+    <circle cx="600" cy="360" r="130" fill="#6366f1" opacity="0.08" filter="url(#glow)" class="pulse-orb" />
+
+    <!-- Grid Lines (Subtle Tech Matrix) -->
+    <g stroke="#334155" stroke-opacity="0.18" stroke-width="1">
+      <line x1="80" y1="0" x2="80" y2="380" />
+      <line x1="240" y1="0" x2="240" y2="380" />
+      <line x1="400" y1="0" x2="400" y2="380" />
+      <line x1="560" y1="0" x2="560" y2="380" />
+      <line x1="720" y1="0" x2="720" y2="380" />
+      <line x1="880" y1="0" x2="880" y2="380" />
+      <line x1="1040" y1="0" x2="1040" y2="380" />
+      <line x1="0" y1="70" x2="1200" y2="70" />
+      <line x1="0" y1="150" x2="1200" y2="150" />
+      <line x1="0" y1="230" x2="1200" y2="230" />
+      <line x1="0" y1="310" x2="1200" y2="310" />
+    </g>
+
+    <!-- Animated Data Flow Wave Curves -->
+    <path class="wave-line" d="M -50,110 C 250,40 450,180 750,110 C 1050,40 1150,140 1250,90" fill="none" stroke="#38bdf8" stroke-opacity="0.25" stroke-width="2" />
+    <path class="wave-line" d="M -50,290 C 200,230 500,340 800,270 C 1050,210 1180,310 1250,280" fill="none" stroke="#a855f7" stroke-opacity="0.25" stroke-width="2" style="animation-direction: reverse;" />
+
+    <!-- Scanning Laser Beam -->
+    <rect class="laser-beam" x="0" y="377" width="500" height="3" fill="url(#beamGrad)" />
+
+    <!-- Background Pill 1: Python Native -->
+    <g class="floating-card-1" transform="translate(60, 48)">
+      <rect width="130" height="34" rx="17" fill="#1e293b" fill-opacity="0.75" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1.2" />
+      <circle cx="20" cy="17" r="5" fill="#38bdf8" />
+      <text x="34" y="21" class="badge-text" fill="#7dd3fc">Python Native</text>
+    </g>
+
+    <!-- Background Pill 2: Reactive UI -->
+    <g class="floating-card-2" transform="translate(1005, 52)">
+      <rect width="135" height="34" rx="17" fill="#1e293b" fill-opacity="0.75" stroke="#a855f7" stroke-opacity="0.35" stroke-width="1.2" />
+      <circle cx="20" cy="17" r="5" fill="#c084fc" />
+      <text x="34" y="21" class="badge-text" fill="#d8b4fe">Reactive Apps</text>
+    </g>
+
+    <!-- Background Pill 3: Enterprise BI -->
+    <g class="floating-card-3" transform="translate(980, 296)">
+      <rect width="150" height="34" rx="17" fill="#1e293b" fill-opacity="0.75" stroke="#34d399" stroke-opacity="0.35" stroke-width="1.2" />
+      <circle cx="20" cy="17" r="5" fill="#34d399" />
+      <text x="34" y="21" class="badge-text" fill="#6ee7b7">Enterprise Scale</text>
+    </g>
+
+    <!-- Background Pill 4: AI & MCP -->
+    <g class="floating-card-1" transform="translate(75, 298)">
+      <rect width="130" height="34" rx="17" fill="#1e293b" fill-opacity="0.75" stroke="#f43f5e" stroke-opacity="0.35" stroke-width="1.2" />
+      <circle cx="20" cy="17" r="5" fill="#fb7185" />
+      <text x="34" y="21" class="badge-text" fill="#fda4af">AI &amp; MCP Ready</text>
+    </g>
+  </g>
+
+  <!-- FOREGROUND CONTENT (HIGH CONTRAST, GUARANTEED READABILITY) -->
+  <g id="foreground-content">
+    <!-- Top Pill Indicator -->
+    <g transform="translate(600, 78)">
+      <rect x="-140" y="-14" width="280" height="28" rx="14" fill="#0f172a" stroke="#6366f1" stroke-opacity="0.6" stroke-width="1" />
+      <circle cx="-118" cy="0" r="4" fill="#60a5fa">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="-106" y="4" class="badge-text" fill="#93c5fd" font-size="11">Curated Developer Ecosystem</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="152" text-anchor="middle" class="title" fill="url(#textGrad)" filter="url(#textGlow)">
+      Awesome Data Application Frameworks
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="196" text-anchor="middle" class="subtitle">
+      The definitive guide to Python dashboards, reactive UI engines &amp; enterprise BI infrastructure
+    </text>
+
+    <!-- Metrics Bar / Feature Showcase -->
+    <g transform="translate(260, 230)">
+      <!-- Box 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="190" height="42" rx="8" fill="#1e293b" fill-opacity="0.8" stroke="#334155" stroke-width="1" />
+        <text x="95" y="26" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#cbd5e1">
+          ⚡ 20+ Modern Frameworks
+        </text>
+      </g>
+      <!-- Box 2 -->
+      <g transform="translate(240, 0)">
+        <rect width="200" height="42" rx="8" fill="#1e293b" fill-opacity="0.8" stroke="#334155" stroke-width="1" />
+        <text x="100" y="26" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#cbd5e1">
+          📊 SaaS &amp; Open Source
+        </text>
+      </g>
+      <!-- Box 3 -->
+      <g transform="translate(480, 0)">
+        <rect width="200" height="42" rx="8" fill="#1e293b" fill-opacity="0.8" stroke="#334155" stroke-width="1" />
+        <text x="100" y="26" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#cbd5e1">
+          💰 Transparent Pricing &amp; Limits
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

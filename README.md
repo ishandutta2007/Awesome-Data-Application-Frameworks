@@ -1,209 +1,252 @@
-# Awesome-Data-Application-Frameworks
-
-# Awesome-Data-Application-Frameworks
-
-## Top Data Application Frameworks Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Python-Native Dashboards, Reactive Web Apps & Notebook-to-App Conversion*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Data Application Frameworks**. These tools enable data scientists and analysts to turn Python scripts and Jupyter notebooks into interactive web applications—from rapid prototyping with minimal code to production-grade dashboards with explicit callback architectures and enterprise deployment controls.
-
-
-
-**Examples** include Streamlit, Dash, Shiny, Gradio, Panel, Voila, Anvil, Retool, Metabase, and Apache Superset (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, reactive programming, and open dashboard infrastructure—ideal for data scientists, analytics engineers, and organizations seeking transparent, vendor-independent data app development.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **Streamlit Community Cloud**
-
-  **Free hosting for public Streamlit apps** with GitHub integration. **Pricing**: **Free**—unlimited public apps, no credit card required . **Free tier limits**: **1 GB RAM per app**, limited CPU resources, apps sleep after **7 days of inactivity** (wake automatically when accessed), no persistent storage between sessions, all apps publicly accessible . **Best for**: sharing prototypes and internal tools with zero infrastructure management.
-
-
-
-- **Plotly Cloud (Dash Enterprise)**
-
-  **Managed deployment for Dash apps** with SSO, RBAC, and scaling. **Pricing**: **Free tier** includes **10 Plotly credit trial**, 1 Creator seat, 3 private viewers, and **1 Dash or Plotly Studio app** with Plotly branding . **Pro at $29/month** (or $290/year) adds more seats and apps; Enterprise is custom-priced with SSO, private LLM, and unlimited apps . **Best for**: teams wanting managed Dash with a generous free tier.
-
-
-
-- **Posit Connect Cloud**
-
-  **Managed deployment for Shiny, R Markdown, and Jupyter apps**. **Pricing**: **Free plan** available; **Basic at $19/month** (8 GB RAM, 2 CPU, 25 apps); **Enhanced at $59/month** (16 GB RAM, 4 CPU, private sharing, 1 custom domain); **Advanced starting at $249/month for 5 seats** (RBAC, email auth, up to 5 custom domains); **Enterprise from $10k/year** (SSO, 32 GB RAM, 8 CPU) . **Free tier limits**: generous free plan for getting started; paid tiers add resources and collaboration . **Best for**: R/Python teams wanting managed Posit Connect.
-
-
-
-- **Hugging Face Spaces (Gradio)**
-
-  **Free hosting for Gradio apps** with ZeroGPU support. **Pricing**: **CPU Basic hardware is $0/hour** (2 vCPU, 16 GB RAM, 50 GB non-persistent disk) . **Paid account plan required** for most new compute-backed Gradio Spaces; upgraded hardware from **$0.03/hour** (CPU) and **$0.40/hour** (T4 GPU) . **Free tier limits**: CPU Basic is free hourly but most new Spaces need a paid account; free personal accounts can host limited ZeroGPU Spaces . **Best for**: AI/ML demos and model interfaces.
-
-
-
-- **Anvil**
-
-  **Full-stack Python web apps** with built-in database and hosting. **Pricing**: **Free plan** available for commercial use, but includes Anvil branding banner, no custom domains, and no scheduled tasks . Paid plans (Hobby, Business) remove branding, add custom domains, and increase performance . **Free tier limits**: performance suitable for **one or two low-throughput apps** on shared hosting . **Best for**: teams wanting a complete full-stack framework with Python everywhere.
-
-
-
-- **Panel (via Anaconda Notebooks)**
-
-  **Managed hosting for Panel apps** through Anaconda Notebooks. **Pricing**: **Free Tier** allows **1 application published**; **Starter Tier** allows 4; **Business Tier** allows 10 . **Free tier limits**: 1 published app . **Best for**: HoloViz users wanting managed deployment.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **Streamlit**
-
-  **A faster way to build and share data apps** (Apache-2.0) — **the most widely adopted Python data app framework**. **Simple syntax**, **automatic rerun on interaction**, and the **largest community**. **The critical limitation**: **the entire script reruns on every interaction**—without aggressive `@st.cache_data` and `@st.cache_resource`, every click re-executes your full pipeline. **`st.fragment`** enables partial reruns for sub-second updates. **Best for**: prototypes, internal tools, and apps serving 10-50 concurrent users with proper caching.
-
-
-
-- **Dash**
-
-  **Analytical Web Apps for Python, R, Julia, and Jupyter** (MIT) — **the production-grade choice** from Plotly. **Explicit callback architecture** gives teams **control over data flow and component updates**. **Background callbacks** for long-running work; **partial property updates** to patch only changed components. **The trade-off**: **steeper learning curve and more boilerplate** than Streamlit. **Best for**: complex, stateful production apps where explicit control matters.
-
-
-
-- **Gradio**
-
-  **Build and share delightful machine learning apps, all in Python** (Apache-2.0) — **the AI-native choice**. **The primary SDK for Hugging Face Spaces**—publishing means **instant hosting, API access via gradio_client, and ZeroGPU support**. **Any Gradio 5.28+ app on Spaces is MCP-compatible**. **Best for**: model demos, chat interfaces, and AI playgrounds—**less suitable for general-purpose BI dashboards**.
-
-
-
-- **Shiny for Python**
-
-  **Easy interactive web applications with Python** (MIT) — **the reactive model choice** from Posit. **Formal reactive model minimizes rerendering**—declare dependencies explicitly, and **only what's needed re-executes**. **Scales to larger, more stateful apps** more naturally than Streamlit's rerun model. **Best for**: teams needing fine-grained reactivity without Panel's ecosystem overhead.
-
-
-
-- **Panel (HoloViz)**
-
-  **The powerful data exploration & web app framework for Python** (BSD-3-Clause) — **the PyData-native choice**. **Broadest ecosystem compatibility**—integrates with **Plotly, Vega, HoloViews, ipywidgets, Perspective**. **Datashader integration** renders **millions of sensor readings server-side** without choking the browser. **Best for**: Jupyter-centric workflows and large data volumes.
-
-
-
-- **Voila**
-
-  **From Jupyter notebooks to standalone web apps** (BSD-3-Clause) — **the notebook-native choice**. **Renders live Jupyter notebooks as dashboards**—no code changes, no framework to learn. **Widgets remain interactive**, and the kernel runs server-side. **Best for**: teams already working in Jupyter who want to share notebooks as apps without rewriting.
-
-
-
-- **Anvil**
-
-  **Build full-stack web apps with nothing but Python** (open-source framework, commercial hosting) — **the full-stack Python choice**. **Client-side Python runs in the browser via Skulpt**, **server-side Python runs in a secure cloud environment**, and **the database is built-in**. **The Anvil App Server is open source**—you can **self-host anywhere**. **Best for**: teams wanting a complete full-stack framework with Python everywhere.
-
-
-
-- **Metabase**
-
-  **The simplest, fastest way to get business intelligence and analytics to everyone in your company** (AGPL-3.0) — **the BI-native choice**. **Query Builder for non-SQL users**, **interactive dashboards**, and **25+ data source connectors**. **The default open-source BI tool** for teams wanting self-service analytics without building custom apps.
-
-
-
-- **Apache Superset**
-
-  **Data Visualization and Data Exploration Platform** (Apache-2.0) — **the enterprise BI choice**. **No-code chart builder**, **SQL Editor**, **40+ visualization types**, and **40+ database connectors**. **The most feature-complete open-source BI platform** for complex analytical requirements.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **NiceGUI** — Create web-based UI with Python (MIT). **Browser-native Python UI**—write Python, get a real web app with Vue/Quasar under the hood.
-
-- **Reflex** — Web apps in pure Python (Apache-2.0). **Full-stack Python framework**—compile Python to React/Next.js.
-
-- **PyWebIO** — Write interactive web app in script way (MIT). **Minimal Python UI**—imperative functions instead of declarative components.
-
-- **Taipy** — Build Python Data & AI web applications (Apache-2.0). **Scenario-management choice**—what-if analysis, pipeline orchestration, and dashboarding.
-
-- Community **n8n** workflows for data app deployment automation and dashboard refresh alerting.
-
-
-
-**Frameworks for building custom systems**: Combine **Streamlit** for rapid prototyping with **Dash** for production dashboards, **Gradio** for AI demos and Hugging Face Spaces integration, **Panel** for large-volume data visualization, and **Shiny** for reactive apps with formal state management—creating a comprehensive data app development stack.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Data application frameworks handling enterprise data must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls.
-
-- **The framework choice should be driven by app lifecycle stage.** **Start with Streamlit**—largest community, best LLM code generation support, fastest path to a working prototype. **When you hit its limits**, the pain point tells you where to go: **Dash** for explicit production architecture, **Panel** for data volume, **Shiny** for reactive state, **Gradio** for AI-native interfaces.
-
-- **The rerun model is Streamlit's defining trade-off.** **Every interaction re-executes your entire script**—without caching, a database query runs on every click. **`st.fragment` enables partial reruns**, but production apps need deliberate caching strategy.
-
-- **Dash is the "graduation" framework.** **Explicit callback architecture** gives teams **control over what updates when**—background callbacks handle long-running work, and partial property updates patch only changed components. **The verbosity is the feature.**
-
-- **Gradio's MCP integration is a unique advantage.** **Any Gradio 5.28+ app on Hugging Face Spaces is automatically MCP-compatible**—the entire Spaces catalog functions as a **distributed tool registry for LLMs**.
-
-- **Panel handles data volume where others struggle.** **Datashader integration renders millions of sensor readings server-side** without choking the browser. **The trade-off is complexity**—more concepts to learn and a smaller community than Streamlit.
-
-- Self-hosted open-source solutions require proper deployment configuration, authentication integration, and ongoing maintenance. **Apps left without traffic go to sleep on free hosting**—production deployments need always-on infrastructure.
-
-
+# 🚀 Awesome Data Application Frameworks
+
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Data Application Frameworks Banner" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.iobbadge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Application-Frameworks?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Application-Frameworks?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  <a href="https://gtthub.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 🌟 Introduction & Ecosystem Overview
 
+Welcome to the definitive, community-curated directory of **Data Application Frameworks**, **Python-native dashboards**, **reactive web UI libraries**, and **notebook-to-app conversion platforms**. 
 
-**Made for data scientists, analytics engineers, and organizations building transparent data app solutions.**  
+Whether you are a data scientist transforming Jupyter notebooks into shareable prototypes, an analytics engineer shipping production-grade business intelligence portals, or an AI developer exposing machine learning models via interactive interfaces and MCP (Model Context Protocol) endpoints, this guide covers the entire landscape of hosted SaaS services and open-source developer tooling.
 
-Let's make Data Application Frameworks more open, data-driven, and production-ready.
+---
+
+## 📑 Table of Contents
+
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ Hosted & SaaS Data Application Platforms](#️-hosted--saas-data-application-platforms)
+- [💻 Open-Source Data Application Frameworks](#-open-source-data-application-frameworks)
+- [🧭 Architectural Decision Matrix: Which Tool to Choose?](#-architectural-decision-matrix-which-tool-to-choose)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [📜 License & Community Guidelines](#-license--community-guidelines)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The global Business Intelligence (BI) and Data Analytics Software sector is estimated at **$43.7B to $52.8B in 2026** (with the broader data application development software market exceeding **$314B**). 
+
+The sector exhibits **moderate fragmentation across developer layers with a bifurcated concentration model**: while cloud infrastructure hyperscalers and data warehouses (Snowflake, Databricks, Microsoft Azure) consolidate backend compute and storage runtimes, the front-end data application presentation layer remains highly open, diversified, and competitive between pure-Python reactive frameworks, AI-native demo interfaces, and internal drag-and-drop tool builders rather than a single winner-take-all monopoly.
+
+---
+
+## ☁️ Hosted & SaaS Data Application Platforms
+
+The following table benchmarks managed cloud deployment platforms, visual builder platforms, and hosted runtimes tailored for data applications and analytics dashboards. Entries are **sorted descending by company size (valuation or annual revenue)**.
+
+| 🏢 Platform / Product | 📈 Company Size (Valuation / Revenue) | 💵 Starting Tier Pricing | 🎁 Free Tier / Trial Limits | 🎯 Key Capabilities & Best For |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Streamlit Community Cloud](https://streamlit.io/cloud)** (Snowflake) | **~$55B Valuation / Market Cap** (~$3.6B Annual Revenue) | **$0 / month** (Community Cloud) / **$2.00 per compute credit** for private apps via Snowflake Standard Edition | **Free forever plan**: Up to 3 active public apps per GitHub account, 1 GB RAM, 1 CPU per container, 1 shared resource pool; apps automatically hibernate after 7 consecutive days of inactivity and wake on HTTP access | Zero-configuration GitHub repo deployments, instant sharing of public Python data apps, and seamless enterprise transitions via Snowflake Native Apps. |
+| **[Hugging Face Spaces](https://huggingface.co/spaces)** (Hugging Face) | **$4.5B Valuation** (Series D) / ~$100M ARR | **$9.00 / month** (PRO Account) or on-demand compute starting at **$0.03 / hour** (CPU Upgraded) / **$0.40 / hour** (Nvidia T4 GPU) | **Free forever plan**: Unlimited public Spaces on CPU Basic hardware (2 vCPU, 16 GB RAM, 50 GB non-persistent disk) and queued community ZeroGPU quota | AI/ML demonstrations, Gradio and Streamlit app deployments, instant Model Context Protocol (MCP) tool exposure, and community model benchmarking. |
+| **[Retool](https://retool.com)** (Retool, Inc.) | **$3.2B Valuation** (Series C) / ~$100M ARR | **$10.00 / builder / month** (billed annually at $120/yr) or $12.00 billed monthly + $5.00/internal user/month (Team plan) | **Free forever plan**: Up to 5 total users (builders + end-users), unlimited web & mobile apps, 500 workflow runs/month, 5 GB Retool Database (PostgreSQL), 5 GB storage, and 250 AI credits/month | Low-code drag-and-drop UI component assembly, internal operations tooling, CRUD database administration, and rapid connection to 50+ REST/GraphQL/SQL backends. |
+| **[Anaconda Cloud / Notebooks](https://www.anaconda.com/products/notebooks)** (Anaconda Inc.) | **~$1.5B Valuation** (Series B) / ~$100M ARR | **$9.00 / month** (billed annually at $99.00/yr) for Anaconda Starter tier | **Free forever plan**: 1 published interactive web application (HoloViz Panel), 5 GB persistent cloud storage, 1 vCPU and 4 GB RAM interactive Jupyter notebook environment | PyData-centric teams developing complex scientific visualizations, HoloViz Panel deployment, and curated conda package dependencies without local environment overhead. |
+| **[Hex](https://hex.tech)** (Hex Technologies, Inc.) | **~$500M+ Valuation** (Series B) / ~$25M+ ARR | **$36.00 / editor / month** (billed annually at $432/yr) or $45.00 billed monthly (Professional plan) | **Free forever plan** (Community Plan): Up to 3 project authors, 5 published interactive data apps/projects, shared compute profile (0.5 vCPU, 4 GB RAM), 7-day version history, 100 AI actions/month | Collaborative SQL + Python analytics notebooks, seamless notebook-to-app conversion, automatic caching, and interactive exploration for data science teams. |
+| **[Posit Connect Cloud](https://posit.cloud)** (Posit PBC / formerly RStudio) | **~$500M Est. Valuation** (Public Benefit Corp) / ~$100M ARR | **$19.00 / month** (Basic tier: 8 GB RAM, 2 CPU, up to 25 deployed applications) | **Free forever plan**: Up to 3 published projects/applications, 1 GB RAM, 1 shared CPU core, 5 concurrent user connections, and community forum support | Publishing and sharing Shiny for Python, Shiny for R, Quarto documents, and Streamlit dashboards with environment reproduction and automated package management. |
+| **[Metabase Cloud](https://www.metabase.com/pricing)** (Metabase, Inc.) | **~$200M Valuation** (Series B) / ~$20M ARR | **$100.00 / month** ($90.00 / month billed annually; includes 5 users, then $6.00 / user / month) | **14-day free trial** of Cloud Starter or Cloud Pro (full feature access, automated cloud hosting, backups, 5 users; credit card verification required, cancel anytime); permanent free self-hosted open-source version available | Self-service BI dashboards, visual SQL query builders for non-technical teammates, automated scheduled Slack/email report alerts, and embedded client-facing charts. |
+| **[Preset Cloud](https://preset.io/pricing)** (Preset Inc.) | **~$150M Valuation** (Series B) / ~$15M ARR | **$20.00 / user / month** (billed annually at $240/yr) or $25.00 billed monthly (Professional plan) | **Free forever plan** (Starter Plan): Up to 5 users (all Team Admins), 1 workspace, unlimited charts & dashboards, 40+ visualization types; workspaces automatically hibernate after 30 days of inactivity | Hosted and enterprise-hardened Apache Superset BI, collaborative SQL Lab, granular role-based access control, and enterprise data warehouse exploration. |
+| **[Plotly Cloud / Dash Enterprise](https://plotly.com/dash)** (Plotly Technologies) | **~$150M Est. Valuation** / ~$30M ARR | **$29.00 / creator / month** (billed annually at $290.00/yr) for Plotly Cloud Pro | **Free trial plan**: 10 Plotly compute credits trial, 1 Creator seat, 3 private viewers, and 1 published Dash or Plotly Studio analytical application | High-performance interactive analytical web apps, complete control over fine-grained reactive callback graphs, and complex charting for enterprise analytics teams. |
+| **[Anvil](https://anvil.works/pricing)** (The Anvil Works Ltd.) | **~$10M Est. Valuation** (Seed stage) / ~$2M ARR | **$14.00 / month** (billed annually at $168.00/yr) or $15.00 billed monthly (Personal plan) | **Free forever plan**: Unlimited low-throughput applications with Anvil branding banner, shared cloud hosting runtime, built-in database (up to 50,000 table rows), no custom domains | Full-stack web application development exclusively in Python (browser client code runs via Skulpt, backend code runs on server, built-in database & user auth). |
+
+---
+
+## 💻 Open-Source Data Application Frameworks
+
+Below is the curated collection of leading open-source frameworks for developing interactive data applications, dashboards, reactive web interfaces, and BI platforms. 
+
+All repositories are **sorted descending by current GitHub star counts**, featuring a live social star badge linking straight to each repository's stargazers community.
+
+---
+
+### 1. 📊 [Apache Superset](https://github.com/apache/superset) [![Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers)
+- **License**: Apache-2.0  
+- **Architecture**: Modern enterprise Business Intelligence web platform written in Python (Flask) and TypeScript/React.
+- **Highlights**: Features a rich SQL IDE (SQL Lab), 40+ built-in visualization templates, semantic data modeling, granular role-based security (RBAC), and support for virtually every SQL-speaking database via SQLAlchemy.
+- **Best For**: Enterprise-wide business intelligence, exploratory data analysis, and scalable operational dashboards.
+
+---
+
+### 2. 📈 [Metabase](https://github.com/metabase/metabase) [![Stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers)
+- **License**: AGPL-3.0 / Commercial  
+- **Architecture**: Self-hosted visual business analytics and BI platform written in Clojure and TypeScript/React.
+- **Highlights**: Extremely intuitive visual query builder enabling non-technical stakeholders to construct complex aggregations and filters without writing SQL; instant dashboard creation, automatic drilling, and embedded analytics.
+- **Best For**: Fast, company-wide self-service business intelligence where usability and simplicity are paramount.
+
+---
+
+### 3. ⚡ [Streamlit](https://github.com/streamlit/streamlit) [![Stars](https://img.shields.io/github/stars/streamlit/streamlit?style=social&color=white)](https://github.com/streamlit/streamlit/stargazers)
+- **License**: Apache-2.0  
+- **Architecture**: Script-based Python data application framework that converts flat procedural Python code into interactive web apps.
+- **Highlights**: Incredibly fast development cycle with zero HTML/CSS/JS knowledge required. Reruns the script sequentially on user interaction, augmented by `@st.cache_data`, `@st.cache_resource`, and `@st.fragment` for high-performance localized updates.
+- **Best For**: Rapid prototyping, internal diagnostic utilities, data science presentations, and single-author tools.
+
+---
+
+### 4. 🤖 [Gradio](https://github.com/gradio-app/gradio) [![Stars](https://img.shields.io/github/stars/gradio-app/gradio?style=social&color=white)](https://github.com/gradio-app/gradio/stargazers)
+- **License**: Apache-2.0  
+- **Architecture**: Python library designed for building interactive user interfaces and web demos for machine learning models and LLM agents.
+- **Highlights**: First-class support for audio, video, multimodal chat interfaces, and image inputs; native integration with Hugging Face Spaces and automatic Model Context Protocol (MCP) endpoint generation.
+- **Best For**: Machine learning model demos, interactive AI playgrounds, multimodal conversational agents, and rapid API testing.
+
+---
+
+### 5. ⚛️ [Reflex](https://github.com/reflex-dev/reflex) [![Stars](https://img.shields.io/github/stars/reflex-dev/reflex?style=social&color=white)](https://github.com/reflex-dev/reflex/stargazers)
+- **License**: Apache-2.0  
+- **Architecture**: Full-stack web framework allowing developers to build reactive frontend applications and backend services in 100% pure Python.
+- **Highlights**: Compiles Python UI definitions into a production Next.js / React frontend connected via WebSockets to a FastAPI backend. Provides complete access to the full CSS/Tailwind ecosystem and React component library without writing JavaScript.
+- **Best For**: Full-stack applications requiring customizable production UI, multi-page routing, authentication, and state management in pure Python.
+
+---
+
+### 6. 📉 [Dash](https://github.com/plotly/dash) [![Stars](https://img.shields.io/github/stars/plotly/dash?style=social&color=white)](https://github.com/plotly/dash/stargazers)
+- **License**: MIT  
+- **Architecture**: Enterprise-grade analytical web application library built on top of Plotly.js, React, and Flask.
+- **Highlights**: Explicit callback architecture provides granular control over component updates and state propagation; background callbacks manage long-running distributed compute jobs, and partial property updates patch only modified DOM elements.
+- **Best For**: Production data applications requiring tight state control, enterprise styling, and complex interactive chart cross-filtering.
+
+---
+
+### 7. 🍃 [marimo](https://github.com/marimo-team/marimo) [![Stars](https://img.shields.io/github/stars/marimo-team/marimo?style=social&color=white)](https://github.com/marimo-team/marimo/stargazers)
+- **License**: Apache-2.0  
+- **Architecture**: Reactive, reproducible Python notebook environment that also serves as a standalone data application server.
+- **Highlights**: Notebook cells are organized as a directed acyclic graph (DAG) of pure functions; modifying a cell or interactive UI slider automatically triggers downstream execution without hidden notebook state. Stored as pure, version-control-friendly `.py` files.
+- **Best For**: Reactive notebooks, reproducible scientific computing, and interactive data apps converted directly from computational analysis.
+
+---
+
+### 8. 🔄 [Taipy](https://github.com/Avaiga/taipy) [![Stars](https://img.shields.io/github/stars/Avaiga/taipy?style=social&color=white)](https://github.com/Avaiga/taipy/stargazers)
+- **License**: Apache-2.0  
+- **Architecture**: Full-stack Python framework specifically engineered for building production-ready data applications and what-if scenario management systems.
+- **Highlights**: Distinct separation between reactive graphical user interfaces (Taipy GUI) and backend pipeline orchestration (Taipy Core), with built-in support for data caching, scenario comparison, and scheduling.
+- **Best For**: Enterprise decision-support systems, operational planning, scenario exploration, and multi-user data pipelines.
+
+---
+
+### 9. 🎛️ [NiceGUI](https://github.com/zauberzeug/nicegui) [![Stars](https://img.shields.io/github/stars/zauberzeug/nicegui?style=social&color=white)](https://github.com/zauberzeug/nicegui/stargazers)
+- **License**: MIT  
+- **Architecture**: Lightweight, web-based user interface toolkit for Python powered by FastAPI, Vue.js, and Quasar.
+- **Highlights**: Smooth handling of WebSockets, real-time UI updates, interactive charts (Highcharts, ECharts, Plotly), and native 3D scene rendering via Three.js.
+- **Best For**: Micro-web applications, connected IoT/robotics dashboards, home automation panels, and lightweight internal tools.
+
+---
+
+### 10. 📝 [Evidence](https://github.com/evidence-dev/evidence) [![Stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social&color=white)](https://github.com/evidence-dev/evidence/stargazers)
+- **License**: MIT  
+- **Architecture**: Code-based Business Intelligence platform that compiles Markdown and SQL into fast, static, and interactive data websites.
+- **Highlights**: Implements the "BI-as-code" paradigm; queries run during static site generation or against fast in-process engines (DuckDB), rendering fast charts and narrative reports with Git version control.
+- **Best For**: Data teams seeking reproducible, version-controlled analytics reports and fast static BI websites.
+
+---
+
+### 11. 📓 [Voila](https://github.com/voila-dashboards/voila) [![Stars](https://img.shields.io/github/stars/voila-dashboards/voila?style=social&color=white)](https://github.com/voila-dashboards/voila/stargazers)
+- **License**: BSD-3-Clause  
+- **Architecture**: Turnkey web application renderer that transforms existing Jupyter notebooks into standalone, secure web applications.
+- **Highlights**: Suppresses raw code cells and tracebacks while executing notebook kernels server-side and retaining full interactive `ipywidgets` functionality.
+- **Best For**: Teams already invested in Jupyter notebook workflows who need to share interactive dashboards without rewriting code into dedicated web frameworks.
+
+---
+
+### 12. 🧩 [Panel (HoloViz)](https://github.com/holoviz/panel) [![Stars](https://img.shields.io/github/stars/holoviz/panel?style=social&color=white)](https://github.com/holoviz/panel/stargazers)
+- **License**: BSD-3-Clause  
+- **Architecture**: High-level data exploration and web application framework from the HoloViz PyData ecosystem.
+- **Highlights**: Compatible with Bokeh, Matplotlib, Plotly, Altair, and Vega. Incorporates Datashader integration to render billions of data points server-side without overwhelming web browsers.
+- **Best For**: Big data visualization, PyData scientific computing, geospatial mapping, and high-volume sensor telemetry.
+
+---
+
+### 13. ⌨️ [PyWebIO](https://github.com/pywebio/PyWebIO) [![Stars](https://img.shields.io/github/stars/pywebio/PyWebIO?style=social&color=white)](https://github.com/pywebio/PyWebIO/stargazers)
+- **License**: MIT  
+- **Architecture**: Imperative, script-style Python web application framework that treats web browsers like interactive command-line terminals.
+- **Highlights**: Uses synchronous and asynchronous blocking input/output functions (`input()`, `put_text()`) to construct web applications sequentially without requiring GUI event loops or frontend code.
+- **Best For**: Command-line developers building quick browser-based input forms, survey collection tools, and linear computational scripts.
+
+---
+
+### 14. 🦆 [Rill](https://github.com/rilldata/rill) [![Stars](https://img.shields.io/github/stars/rilldata/rill?style=social&color=white)](https://github.com/rilldata/rill/stargazers)
+- **License**: Apache-2.0  
+- **Architecture**: Embedded, ultra-fast operational BI and dashboard engine combining DuckDB and Apache Arrow with an interactive web UI.
+- **Highlights**: Sub-second dashboard interactions over local files (Parquet, CSV) and cloud data lakes (S3, GCS) without setting up heavy warehouse pipelines.
+- **Best For**: Fast exploratory metrics analysis, operational telemetry, and sub-second BI over columnar files.
+
+---
+
+### 15. ☀️ [Solara](https://github.com/widgetti/solara) [![Stars](https://img.shields.io/github/stars/widgetti/solara?style=social&color=white)](https://github.com/widgetti/solara/stargazers)
+- **License**: Apache-2.0  
+- **Architecture**: Pure Python, React-style component framework built on top of `ipywidgets`.
+- **Highlights**: Declarative component structure modeled after React hooks (`use_state`, `use_effect`), enabling scalable state management, reusable UI libraries, and high component density.
+- **Best For**: Complex, modular web applications and data dashboards requiring formal component hierarchies without JavaScript.
+
+---
+
+### 16. 💡 [Shiny for Python](https://github.com/posit-dev/py-shiny) [![Stars](https://img.shields.io/github/stars/posit-dev/py-shiny?style=social&color=white)](https://github.com/posit-dev/py-shiny/stargazers)
+- **License**: MIT  
+- **Architecture**: Python implementation of Posit's renowned reactive web application model.
+- **Highlights**: Explicit reactive dependency graphs ensure that when an input changes, only the precise subset of calculations and UI elements that depend on that input are recomputed. Includes client-side Pyodide execution (Shinylive) to run full apps in the browser with no backend server.
+- **Best For**: Reactive stateful applications, scientific data analysis, and serverless client-side web apps.
+
+---
+
+### 17. 🛠️ [Anvil App Server](https://github.com/anvil-works/anvil-runtime) [![Stars](https://img.shields.io/github/stars/anvil-works/anvil-runtime?style=social&color=white)](https://github.com/anvil-works/anvil-runtime/stargazers)
+- **License**: AGPL-3.0  
+- **Architecture**: Open-source standalone app server that executes Anvil applications in self-hosted enterprise infrastructure.
+- **Highlights**: Runs client-side Python in the web browser, connects directly to Python backend services, and automates database integration and session handling.
+- **Best For**: Organizations deploying self-hosted full-stack Python business applications without cloud vendor lock-in.
+
+---
+
+### 18. 🌊 [Deephaven Core](https://github.com/deephaven/deephaven-core) [![Stars](https://img.shields.io/github/stars/deephaven/deephaven-core?style=social&color=white)](https://github.com/deephaven/deephaven-core/stargazers)
+- **License**: Apache-2.0  
+- **Architecture**: Real-time analytical engine and UI framework engineered for streaming time-series data and event-driven data apps.
+- **Highlights**: Merges historical batches and real-time live data streams seamlessly; tables auto-update reactively as new events enter the engine without full page refreshes.
+- **Best For**: Real-time financial trading dashboards, IoT telemetry feeds, and streaming operational analytics.
+
+---
+
+## 🧭 Architectural Decision Matrix: Which Tool to Choose?
+
+Choosing the right data application framework depends on your target users, state complexity, and latency requirements:
+
+| Use Case / Requirement | Recommended Tool(s) | Primary Rationale |
+| :--- | :--- | :--- |
+| **Rapid Prototype (< 1 day)** | **Streamlit** / **Gradio** | Fastest development time; intuitive linear script execution. |
+| **Interactive ML / LLM Playground** | **Gradio** | Native support for chat streaming, media inputs, ZeroGPU, and MCP agents. |
+| **Production Enterprise BI** | **Apache Superset** / **Metabase** | Mature SQL editors, user permission hierarchies, and multi-tenant DB connectors. |
+| **Explicit State & Complex Callbacks** | **Dash** / **Shiny for Python** | Granular callback graphs prevent unnecessary full-page recalculations. |
+| **Big Data (> 10M rows) / Geospatial** | **Panel (HoloViz)** | Integrated Datashader delivers server-side rasterization without browser crashes. |
+| **Real-Time Streaming / Event Data** | **Deephaven Core** | Built-in reactive engine handles high-frequency live time-series streams natively. |
+| **Reactive Reproducible Notebooks** | **marimo** | Pure Python files, DAG cell dependencies, and zero hidden notebook state. |
+| **Internal Tools & DB Admin Portals** | **Retool** | Drag-and-drop UI component library with out-of-the-box CRUD database integrations. |
+| **Version-Controlled BI as Code** | **Evidence** | Compiles Markdown + SQL into fast, version-controlled static web assets. |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome from the global developer and data science community!
+
+1. 🍴 **Fork the repository** on GitHub.
+2. 🌿 **Create a feature branch** (`git checkout -b feature/add-new-framework`).
+3. 📝 **Add your tool or framework**:
+   - Provide the project name, official GitHub repository link, license, and a concise 2–3 sentence overview.
+   - For SaaS products, include the company size, starting tier price, and specific free tier / trial boundaries.
+   - For open-source projects, include the live social GitHub stars badge linking to the stargazers page.
+4. 📬 **Submit a Pull Request** with a descriptive summary of your additions.
+
+---
+
+## 📜 License & Community Guidelines
+
+- Distributed under the **MIT License**. See [LICENSE](file:///C:/Users/ishan/Documents/Projects/Awesome-Data-Application-Frameworks/LICENSE) for more details.
+- When handling production datasets, always ensure compliance with enterprise privacy standards (GDPR, HIPAA, SOC 2).
+- ⭐ **Star this repository** if you found it useful for navigating the modern data application landscape!
