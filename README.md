@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF88Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Application-Frameworks?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Application-Frameworks?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Application-Frameworks?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
@@ -67,7 +67,7 @@ The following table benchmarks managed cloud deployment platforms, visual builde
 
 Below is the comprehensive, community-curated collection of leading open-source frameworks for developing interactive data applications, dashboards, reactive web interfaces, and business intelligence platforms. 
 
-All repositories are **sorted descending by live GitHub star counts**, featuring a live social star badge linking directly to each repository's stargazers community.
+All repositories are **sorted descending by live GitHub Stars_Counts**, featuring a live social Stars_Badge linking directly to each repository's stargazers community.
 
 ---
 
@@ -307,7 +307,7 @@ Contributions are welcome from the global developer and data science community!
 3. 📝 **Add your tool or framework**:
    - Provide the project name, official GitHub repository link, license, and a concise 2–3 sentence overview.
    - For SaaS products, include the company size, starting tier price, and specific free tier / trial boundaries.
-   - For open-source projects, include the live social GitHub stars badge linking to the stargazers page.
+   - For open-source projects, include the live social GitHub_Stars_Badge linking to the stargazers page.
 4. 📬 **Submit a Pull Request** with a descriptive summary of your additions.
 
 ---
