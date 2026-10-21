@@ -5,19 +5,19 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.iobbadge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF88Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Application-Frameworks?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Application-Frameworks?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-Application-Frameworks/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
-  <a href="https://gtthub.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 ---
 
 ## 🌟 Introduction & Ecosystem Overview
 
-Welcome to the definitive, community-curated directory of **Data Application Frameworks**, **Python-native dashboards**, **reactive web UI libraries**, and **notebook-to-app conversion platforms**. 
+Welcome to the definitive, community-curated directory of **Data Application Frameworks**, **Python-native dashboards**, **reactive web UI libraries**, **internal tool builders**, and **notebook-to-app conversion platforms**. 
 
 Whether you are a data scientist transforming Jupyter notebooks into shareable prototypes, an analytics engineer shipping production-grade business intelligence portals, or an AI developer exposing machine learning models via interactive interfaces and MCP (Model Context Protocol) endpoints, this guide covers the entire landscape of hosted SaaS services and open-source developer tooling.
 
@@ -30,7 +30,7 @@ Whether you are a data scientist transforming Jupyter notebooks into shareable p
 - [💻 Open-Source Data Application Frameworks](#-open-source-data-application-frameworks)
 - [🧭 Architectural Decision Matrix: Which Tool to Choose?](#-architectural-decision-matrix-which-tool-to-choose)
 - [🤝 How to Contribute](#-how-to-contribute)
-- [⭐ Star History](#star-history)
+- [⭐ Star History](#-star-history)
 - [💖 Support](#-support)
 - [📜 License & Community Guidelines](#-license--community-guidelines)
 
@@ -65,9 +65,9 @@ The following table benchmarks managed cloud deployment platforms, visual builde
 
 ## 💻 Open-Source Data Application Frameworks
 
-Below is the curated collection of leading open-source frameworks for developing interactive data applications, dashboards, reactive web interfaces, and BI platforms. 
+Below is the comprehensive, community-curated collection of leading open-source frameworks for developing interactive data applications, dashboards, reactive web interfaces, and business intelligence platforms. 
 
-All repositories are **sorted descending by current GitHub star counts**, featuring a live social star badge linking straight to each repository's stargazers community.
+All repositories are **sorted descending by live GitHub star counts**, featuring a live social star badge linking directly to each repository's stargazers community.
 
 ---
 
@@ -103,7 +103,23 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 5. ⚛️ [Reflex](https://github.com/reflex-dev/reflex) [![Stars](https://img.shields.io/github/stars/reflex-dev/reflex?style=social&color=white)](https://github.com/reflex-dev/reflex/stargazers)
+### 5. 🛠️ [ToolJet](https://github.com/ToolJet/ToolJet) [![Stars](https://img.shields.io/github/stars/ToolJet/ToolJet?style=social&color=white)](https://github.com/ToolJet/ToolJet/stargazers)
+- **License**: AGPL-3.0  
+- **Architecture**: Open-source low-code application builder built with Node.js and React for generating internal tools and business dashboards.
+- **Highlights**: Drag-and-drop visual component canvas with 50+ pre-built widgets, built-in low-code database (ToolJet DB), granular access control, and seamless integrations with PostgreSQL, MongoDB, Snowflake, and REST APIs.
+- **Best For**: Internal tool development, custom database administrative portals, and automated business workflows.
+
+---
+
+### 6. 📱 [Appsmith](https://github.com/appsmithorg/appsmith) [![Stars](https://img.shields.io/github/stars/appsmithorg/appsmith?style=social&color=white)](https://github.com/appsmithorg/appsmith/stargazers)
+- **License**: Apache-2.0  
+- **Architecture**: Low-code framework written in Java and React for building internal applications, dashboards, and database admin panels.
+- **Highlights**: Rich library of 45+ customizable UI widgets, embedded JavaScript scripting for dynamic data transformations, real-time collaboration, and native connectors to databases, GraphQL, and SaaS APIs.
+- **Best For**: Internal dashboards, customer support portals, inventory trackers, and enterprise operational tooling.
+
+---
+
+### 7. ⚛️ [Reflex](https://github.com/reflex-dev/reflex) [![Stars](https://img.shields.io/github/stars/reflex-dev/reflex?style=social&color=white)](https://github.com/reflex-dev/reflex/stargazers)
 - **License**: Apache-2.0  
 - **Architecture**: Full-stack web framework allowing developers to build reactive frontend applications and backend services in 100% pure Python.
 - **Highlights**: Compiles Python UI definitions into a production Next.js / React frontend connected via WebSockets to a FastAPI backend. Provides complete access to the full CSS/Tailwind ecosystem and React component library without writing JavaScript.
@@ -111,7 +127,7 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 6. 📉 [Dash](https://github.com/plotly/dash) [![Stars](https://img.shields.io/github/stars/plotly/dash?style=social&color=white)](https://github.com/plotly/dash/stargazers)
+### 8. 📉 [Dash](https://github.com/plotly/dash) [![Stars](https://img.shields.io/github/stars/plotly/dash?style=social&color=white)](https://github.com/plotly/dash/stargazers)
 - **License**: MIT  
 - **Architecture**: Enterprise-grade analytical web application library built on top of Plotly.js, React, and Flask.
 - **Highlights**: Explicit callback architecture provides granular control over component updates and state propagation; background callbacks manage long-running distributed compute jobs, and partial property updates patch only modified DOM elements.
@@ -119,7 +135,7 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 7. 🍃 [marimo](https://github.com/marimo-team/marimo) [![Stars](https://img.shields.io/github/stars/marimo-team/marimo?style=social&color=white)](https://github.com/marimo-team/marimo/stargazers)
+### 9. 🍃 [marimo](https://github.com/marimo-team/marimo) [![Stars](https://img.shields.io/github/stars/marimo-team/marimo?style=social&color=white)](https://github.com/marimo-team/marimo/stargazers)
 - **License**: Apache-2.0  
 - **Architecture**: Reactive, reproducible Python notebook environment that also serves as a standalone data application server.
 - **Highlights**: Notebook cells are organized as a directed acyclic graph (DAG) of pure functions; modifying a cell or interactive UI slider automatically triggers downstream execution without hidden notebook state. Stored as pure, version-control-friendly `.py` files.
@@ -127,7 +143,23 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 8. 🔄 [Taipy](https://github.com/Avaiga/taipy) [![Stars](https://img.shields.io/github/stars/Avaiga/taipy?style=social&color=white)](https://github.com/Avaiga/taipy/stargazers)
+### 10. 🧊 [Cube](https://github.com/cube-js/cube) [![Stars](https://img.shields.io/github/stars/cube-js/cube?style=social&color=white)](https://github.com/cube-js/cube/stargazers)
+- **License**: Apache-2.0  
+- **Architecture**: Universal semantic layer and data modeling engine built in Rust and Node.js for modern data applications.
+- **Highlights**: Centralizes metrics definitions, caching (pre-aggregations), data access security, and SQL/REST/GraphQL APIs between data warehouses and custom frontends.
+- **Best For**: Headless BI, embedding analytics into SaaS applications, and establishing a unified semantic layer across data apps.
+
+---
+
+### 11. 🎨 [Bokeh](https://github.com/bokeh/bokeh) [![Stars](https://img.shields.io/github/stars/bokeh/bokeh?style=social&color=white)](https://github.com/bokeh/bokeh/stargazers)
+- **License**: BSD-3-Clause  
+- **Architecture**: Interactive Python visualization library targeting modern web browsers for rendering complex statistical graphics.
+- **Highlights**: Provides elegant, versatile graphics and high-performance streaming interactivity over large or real-time datasets with a client-server protocol (Bokeh Server).
+- **Best For**: Standalone interactive charts, real-time data streaming plots, and scientific exploratory visualizations.
+
+---
+
+### 12. 🔄 [Taipy](https://github.com/Avaiga/taipy) [![Stars](https://img.shields.io/github/stars/Avaiga/taipy?style=social&color=white)](https://github.com/Avaiga/taipy/stargazers)
 - **License**: Apache-2.0  
 - **Architecture**: Full-stack Python framework specifically engineered for building production-ready data applications and what-if scenario management systems.
 - **Highlights**: Distinct separation between reactive graphical user interfaces (Taipy GUI) and backend pipeline orchestration (Taipy Core), with built-in support for data caching, scenario comparison, and scheduling.
@@ -135,7 +167,15 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 9. 🎛️ [NiceGUI](https://github.com/zauberzeug/nicegui) [![Stars](https://img.shields.io/github/stars/zauberzeug/nicegui?style=social&color=white)](https://github.com/zauberzeug/nicegui/stargazers)
+### 13. 💨 [Windmill](https://github.com/windmill-labs/windmill) [![Stars](https://img.shields.io/github/stars/windmill-labs/windmill?style=social&color=white)](https://github.com/windmill-labs/windmill/stargazers)
+- **License**: AGPL-3.0  
+- **Architecture**: High-performance, developer-first developer platform and workflow engine built with Rust, Svelte, and Python/TypeScript.
+- **Highlights**: Converts code scripts (Python, TypeScript, Go, Bash, SQL) into auto-generated UIs, workflows, and distributed background jobs; includes visual UI builder with instant deployment.
+- **Best For**: Developer-centric internal tools, complex data pipeline orchestration, and background worker automation.
+
+---
+
+### 14. 🎛️ [NiceGUI](https://github.com/zauberzeug/nicegui) [![Stars](https://img.shields.io/github/stars/zauberzeug/nicegui?style=social&color=white)](https://github.com/zauberzeug/nicegui/stargazers)
 - **License**: MIT  
 - **Architecture**: Lightweight, web-based user interface toolkit for Python powered by FastAPI, Vue.js, and Quasar.
 - **Highlights**: Smooth handling of WebSockets, real-time UI updates, interactive charts (Highcharts, ECharts, Plotly), and native 3D scene rendering via Three.js.
@@ -143,7 +183,15 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 10. 📝 [Evidence](https://github.com/evidence-dev/evidence) [![Stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social&color=white)](https://github.com/evidence-dev/evidence/stargazers)
+### 15. 🏗️ [ILLA Cloud](https://github.com/illacloud/illa-builder) [![Stars](https://img.shields.io/github/stars/illacloud/illa-builder?style=social&color=white)](https://github.com/illacloud/illa-builder/stargazers)
+- **License**: Apache-2.0  
+- **Architecture**: Open-source low-code builder designed for rapid creation of internal tools, data dashboards, and AI workflows.
+- **Highlights**: Drag-and-drop interface, real-time collaborative editing, dozens of UI components, and integrated AI agent orchestration.
+- **Best For**: Rapid business tool prototyping, collaborative internal applications, and AI-assisted data entry forms.
+
+---
+
+### 16. 📝 [Evidence](https://github.com/evidence-dev/evidence) [![Stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social&color=white)](https://github.com/evidence-dev/evidence/stargazers)
 - **License**: MIT  
 - **Architecture**: Code-based Business Intelligence platform that compiles Markdown and SQL into fast, static, and interactive data websites.
 - **Highlights**: Implements the "BI-as-code" paradigm; queries run during static site generation or against fast in-process engines (DuckDB), rendering fast charts and narrative reports with Git version control.
@@ -151,7 +199,15 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 11. 📓 [Voila](https://github.com/voila-dashboards/voila) [![Stars](https://img.shields.io/github/stars/voila-dashboards/voila?style=social&color=white)](https://github.com/voila-dashboards/voila/stargazers)
+### 17. ⚡ [Lightdash](https://github.com/lightdash/lightdash) [![Stars](https://img.shields.io/github/stars/lightdash/lightdash?style=social&color=white)](https://github.com/lightdash/lightdash/stargazers)
+- **License**: MIT  
+- **Architecture**: Open-source modern BI platform built natively for dbt (data build tool) projects.
+- **Highlights**: Defines metrics and dimensions directly in dbt YAML files, keeping business logic close to data warehouse transformations with automatic dashboard sync and git versioning.
+- **Best For**: Analytics engineering teams heavily invested in dbt seeking a self-serve BI layer.
+
+---
+
+### 18. 📓 [Voila](https://github.com/voila-dashboards/voila) [![Stars](https://img.shields.io/github/stars/voila-dashboards/voila?style=social&color=white)](https://github.com/voila-dashboards/voila/stargazers)
 - **License**: BSD-3-Clause  
 - **Architecture**: Turnkey web application renderer that transforms existing Jupyter notebooks into standalone, secure web applications.
 - **Highlights**: Suppresses raw code cells and tracebacks while executing notebook kernels server-side and retaining full interactive `ipywidgets` functionality.
@@ -159,7 +215,7 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 12. 🧩 [Panel (HoloViz)](https://github.com/holoviz/panel) [![Stars](https://img.shields.io/github/stars/holoviz/panel?style=social&color=white)](https://github.com/holoviz/panel/stargazers)
+### 19. 🧩 [Panel (HoloViz)](https://github.com/holoviz/panel) [![Stars](https://img.shields.io/github/stars/holoviz/panel?style=social&color=white)](https://github.com/holoviz/panel/stargazers)
 - **License**: BSD-3-Clause  
 - **Architecture**: High-level data exploration and web application framework from the HoloViz PyData ecosystem.
 - **Highlights**: Compatible with Bokeh, Matplotlib, Plotly, Altair, and Vega. Incorporates Datashader integration to render billions of data points server-side without overwhelming web browsers.
@@ -167,7 +223,7 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 13. ⌨️ [PyWebIO](https://github.com/pywebio/PyWebIO) [![Stars](https://img.shields.io/github/stars/pywebio/PyWebIO?style=social&color=white)](https://github.com/pywebio/PyWebIO/stargazers)
+### 20. ⌨️ [PyWebIO](https://github.com/pywebio/PyWebIO) [![Stars](https://img.shields.io/github/stars/pywebio/PyWebIO?style=social&color=white)](https://github.com/pywebio/PyWebIO/stargazers)
 - **License**: MIT  
 - **Architecture**: Imperative, script-style Python web application framework that treats web browsers like interactive command-line terminals.
 - **Highlights**: Uses synchronous and asynchronous blocking input/output functions (`input()`, `put_text()`) to construct web applications sequentially without requiring GUI event loops or frontend code.
@@ -175,7 +231,15 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 14. 🦆 [Rill](https://github.com/rilldata/rill) [![Stars](https://img.shields.io/github/stars/rilldata/rill?style=social&color=white)](https://github.com/rilldata/rill/stargazers)
+### 21. 🌊 [H2O Wave](https://github.com/h2oai/wave) [![Stars](https://img.shields.io/github/stars/h2oai/wave?style=social&color=white)](https://github.com/h2oai/wave/stargazers)
+- **License**: Apache-2.0  
+- **Architecture**: Real-time web application and dashboard framework from H2O.ai written in Go and Python/R.
+- **Highlights**: Low-latency reactive architecture using WebSockets; comes with an extensive library of specialized data cards, charts, and tables for real-time telemetry and streaming AI apps.
+- **Best For**: High-frequency real-time dashboards, live AI model monitoring, and automated machine learning user interfaces.
+
+---
+
+### 22. 🦆 [Rill](https://github.com/rilldata/rill) [![Stars](https://img.shields.io/github/stars/rilldata/rill?style=social&color=white)](https://github.com/rilldata/rill/stargazers)
 - **License**: Apache-2.0  
 - **Architecture**: Embedded, ultra-fast operational BI and dashboard engine combining DuckDB and Apache Arrow with an interactive web UI.
 - **Highlights**: Sub-second dashboard interactions over local files (Parquet, CSV) and cloud data lakes (S3, GCS) without setting up heavy warehouse pipelines.
@@ -183,7 +247,7 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 15. ☀️ [Solara](https://github.com/widgetti/solara) [![Stars](https://img.shields.io/github/stars/widgetti/solara?style=social&color=white)](https://github.com/widgetti/solara/stargazers)
+### 23. ☀️ [Solara](https://github.com/widgetti/solara) [![Stars](https://img.shields.io/github/stars/widgetti/solara?style=social&color=white)](https://github.com/widgetti/solara/stargazers)
 - **License**: Apache-2.0  
 - **Architecture**: Pure Python, React-style component framework built on top of `ipywidgets`.
 - **Highlights**: Declarative component structure modeled after React hooks (`use_state`, `use_effect`), enabling scalable state management, reusable UI libraries, and high component density.
@@ -191,7 +255,7 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 16. 💡 [Shiny for Python](https://github.com/posit-dev/py-shiny) [![Stars](https://img.shields.io/github/stars/posit-dev/py-shiny?style=social&color=white)](https://github.com/posit-dev/py-shiny/stargazers)
+### 24. 💡 [Shiny for Python](https://github.com/posit-dev/py-shiny) [![Stars](https://img.shields.io/github/stars/posit-dev/py-shiny?style=social&color=white)](https://github.com/posit-dev/py-shiny/stargazers)
 - **License**: MIT  
 - **Architecture**: Python implementation of Posit's renowned reactive web application model.
 - **Highlights**: Explicit reactive dependency graphs ensure that when an input changes, only the precise subset of calculations and UI elements that depend on that input are recomputed. Includes client-side Pyodide execution (Shinylive) to run full apps in the browser with no backend server.
@@ -199,7 +263,7 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 17. 🛠️ [Anvil App Server](https://github.com/anvil-works/anvil-runtime) [![Stars](https://img.shields.io/github/stars/anvil-works/anvil-runtime?style=social&color=white)](https://github.com/anvil-works/anvil-runtime/stargazers)
+### 25. 🔧 [Anvil App Server](https://github.com/anvil-works/anvil-runtime) [![Stars](https://img.shields.io/github/stars/anvil-works/anvil-runtime?style=social&color=white)](https://github.com/anvil-works/anvil-runtime/stargazers)
 - **License**: AGPL-3.0  
 - **Architecture**: Open-source standalone app server that executes Anvil applications in self-hosted enterprise infrastructure.
 - **Highlights**: Runs client-side Python in the web browser, connects directly to Python backend services, and automates database integration and session handling.
@@ -207,7 +271,7 @@ All repositories are **sorted descending by current GitHub star counts**, featur
 
 ---
 
-### 18. 🌊 [Deephaven Core](https://github.com/deephaven/deephaven-core) [![Stars](https://img.shields.io/github/stars/deephaven/deephaven-core?style=social&color=white)](https://github.com/deephaven/deephaven-core/stargazers)
+### 26. 🚀 [Deephaven Core](https://github.com/deephaven/deephaven-core) [![Stars](https://img.shields.io/github/stars/deephaven/deephaven-core?style=social&color=white)](https://github.com/deephaven/deephaven-core/stargazers)
 - **License**: Apache-2.0  
 - **Architecture**: Real-time analytical engine and UI framework engineered for streaming time-series data and event-driven data apps.
 - **Highlights**: Merges historical batches and real-time live data streams seamlessly; tables auto-update reactively as new events enter the engine without full page refreshes.
@@ -221,15 +285,16 @@ Choosing the right data application framework depends on your target users, stat
 
 | Use Case / Requirement | Recommended Tool(s) | Primary Rationale |
 | :--- | :--- | :--- |
-| **Rapid Prototype (< 1 day)** | **Streamlit** / **Gradio** | Fastest development time; intuitive linear script execution. |
-| **Interactive ML / LLM Playground** | **Gradio** | Native support for chat streaming, media inputs, ZeroGPU, and MCP agents. |
-| **Production Enterprise BI** | **Apache Superset** / **Metabase** | Mature SQL editors, user permission hierarchies, and multi-tenant DB connectors. |
-| **Explicit State & Complex Callbacks** | **Dash** / **Shiny for Python** | Granular callback graphs prevent unnecessary full-page recalculations. |
-| **Big Data (> 10M rows) / Geospatial** | **Panel (HoloViz)** | Integrated Datashader delivers server-side rasterization without browser crashes. |
-| **Real-Time Streaming / Event Data** | **Deephaven Core** | Built-in reactive engine handles high-frequency live time-series streams natively. |
-| **Reactive Reproducible Notebooks** | **marimo** | Pure Python files, DAG cell dependencies, and zero hidden notebook state. |
-| **Internal Tools & DB Admin Portals** | **Retool** | Drag-and-drop UI component library with out-of-the-box CRUD database integrations. |
-| **Version-Controlled BI as Code** | **Evidence** | Compiles Markdown + SQL into fast, version-controlled static web assets. |
+| **⚡ Rapid Prototype (< 1 day)** | **Streamlit** / **Gradio** | Fastest development time; intuitive linear script execution. |
+| **🤖 Interactive ML / LLM Playground** | **Gradio** | Native support for chat streaming, media inputs, ZeroGPU, and MCP agents. |
+| **🏢 Production Enterprise BI** | **Apache Superset** / **Metabase** | Mature SQL editors, user permission hierarchies, and multi-tenant DB connectors. |
+| **🔄 Explicit State & Complex Callbacks** | **Dash** / **Shiny for Python** | Granular callback graphs prevent unnecessary full-page recalculations. |
+| **📊 Big Data (> 10M rows) / Geospatial** | **Panel (HoloViz)** / **Bokeh** | Integrated Datashader delivers server-side rasterization without browser crashes. |
+| **🌊 Real-Time Streaming / Event Data** | **Deephaven Core** / **H2O Wave** | Built-in reactive engine handles high-frequency live time-series streams natively. |
+| **🍃 Reactive Reproducible Notebooks** | **marimo** | Pure Python files, DAG cell dependencies, and zero hidden notebook state. |
+| **🛠️ Internal Tools & DB Admin Portals** | **Appsmith** / **ToolJet** / **Retool** | Drag-and-drop UI component library with out-of-the-box CRUD database integrations. |
+| **📝 Version-Controlled BI as Code** | **Evidence** / **Lightdash** | Compiles Markdown + SQL into fast, version-controlled static web assets. |
+| **🧊 Semantic Layer & Headless BI** | **Cube** | Unified metrics definitions, multi-cloud caching, and REST/GraphQL APIs. |
 
 ---
 
@@ -247,7 +312,7 @@ Contributions are welcome from the global developer and data science community!
 
 ---
 
-##  Star History
+## ⭐ Star History
 
 [![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Data-Application-Frameworks&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Data-Application-Frameworks&type=date&legend=top-left)
 
@@ -273,231 +338,6 @@ If this project saves you time or helps your team choose the right data applicat
 
 ## 📜 License & Community Guidelines
 
-- Distributed under the **MIT License**. See [LICENSE](file:///C:/Users/ishan/Documents/Projects/Awesome-Data-Application-Frameworks/LICENSE) for more details.
+- Distributed under the **MIT License**. See [LICENSE](LICENSE) for more details.
 - When handling production datasets, always ensure compliance with enterprise privacy standards (GDPR, HIPAA, SOC 2).
 - ⭐ **Star this repository** if you found it useful for navigating the modern data application landscape!
-# Awesome-Data-Application-Frameworks
-
-## Top Data Application Frameworks Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Interactive Data Apps, Dashboards, ML Demos & Internal Tools*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Data Application Frameworks**. These tools enable developers and data scientists to build interactive web applications, dashboards, and internal tools from Python, R, or SQL code with minimal frontend effort.
-
-
-
-**Examples** include Streamlit, Dash Enterprise, Shiny Server, Gradio, Voila, Anvil, Panel, Retool, Metabase, and Apache Superset (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom deployment, and transparent data app development — ideal for data teams, researchers, and developers building production-ready analytics applications without vendor lock-in. The open-source ecosystem spans Python-native frameworks (Streamlit, Dash, Gradio, Panel, Shiny), notebook-to-app converters (Voilà), low-code internal tool builders (Windmill, Appsmith), and BI platforms (Metabase, Superset).
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Streamlit (Community Cloud)](https://streamlit.io/cloud)**  
-
-  Hosted deployment platform for Streamlit apps with free tier for public apps and paid options for private deployment.
-
-
-
-- **[Dash Enterprise](https://plotly.com/dash/)**  
-
-  Commercial platform from Plotly for deploying, scaling, and managing Dash applications with authentication, Kubernetes scaling, and app management .
-
-
-
-- **[Shiny Server / Posit Connect](https://posit.co/products/enterprise/connect/)**  
-
-  Commercial hosting and management platform for Shiny applications with advanced authentication, scheduling, and multi-content support .
-
-
-
-- **[Gradio (Hugging Face Spaces)](https://huggingface.co/spaces)**  
-
-  Primary SDK for Hugging Face Spaces; free hosting for ML demos with automatic API access and MCP server exposure for LLM tool integration .
-
-
-
-- **[Anvil](https://anvil.works/)**  
-
-  Full-stack web app builder for Python with hosted deployment; runtime and app server are open source, but the hosted service and editor are proprietary .
-
-
-
-- **[Panel (HoloViz Cloud)](https://holoviz.org/)**  
-
-  Commercial hosting for Panel applications from the HoloViz ecosystem, with enterprise deployment options.
-
-
-
-- **[Retool](https://retool.com/)**  
-
-  Low-code platform for building internal tools with drag-and-drop UI, database connections, and workflow automation. Proprietary and closed source .
-
-
-
-- **[Metabase Cloud](https://www.metabase.com/cloud/)**  
-
-  Hosted version of the open-source Metabase BI platform with managed infrastructure and support.
-
-
-
-- **[Apache Superset (Preset)](https://preset.io/)**  
-
-  Managed Superset service from Preset, offering cloud-hosted BI and data exploration without self-managed infrastructure.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Streamlit](https://github.com/streamlit/streamlit)**  
-
-  The fastest way to build and share data apps in pure Python. Script reruns on every interaction, making it ideal for rapid prototyping and internal tools. Apache 2.0 licensed with 46k+ stars . Best for quick ML demos and simple dashboards .
-
-
-
-- **[Dash (Plotly)](https://github.com/plotly/dash)**  
-
-  Analytical web apps for Python, R, and Julia. Built on Flask and React with explicit callback architecture for production-grade, highly customized dashboards. Steeper learning curve but superior control over layout and state . Includes background callbacks and Celery support for long-running tasks .
-
-
-
-- **[Gradio](https://github.com/gradio-app/gradio)**  
-
-  Build and share ML demos in just a few lines of Python. Primary SDK for Hugging Face Spaces with built-in queuing, streaming, and chatbot interfaces. Apache 2.0 licensed . Less suited for general-purpose analytics dashboards than Streamlit or Dash .
-
-
-
-- **[Shiny for Python / Shiny for R](https://github.com/posit-dev/py-shiny)**  
-
-  Reactive web framework from Posit (formerly RStudio), originally in R and now available for Python. Formal reactive model minimizes rerendering and scales better than Streamlit for stateful applications . Open-source Shiny Server enables on-premises hosting .
-
-
-
-- **[Panel (HoloViz)](https://github.com/holoviz/panel)**  
-
-  Powerful data exploration and web app framework for Python from the HoloViz ecosystem. BSD-3-Clause licensed with 5,700+ stars . Integrates tightly with Bokeh, HoloViews, and other visualization libraries for complex dashboards.
-
-
-
-- **[Voilà](https://github.com/voila-dashboards/voila)**  
-
-  Turns Jupyter notebooks into standalone web applications by rendering outputs and hiding code cells. Ideal for sharing analysis results as interactive dashboards without rewriting in a framework.
-
-
-
-- **[Metabase](https://github.com/metabase/metabase)**  
-
-  Easy-to-use open-source BI and embedded analytics tool. Lets non-technical users explore data and build dashboards without SQL. Clojure-based with 41k+ stars and active development .
-
-
-
-- **[Apache Superset](https://github.com/apache/superset)**  
-
-  Modern, enterprise-ready BI web application from Apache. Features no-code chart builder, SQL editor, semantic layer, and support for nearly any SQL database. Cloud-native architecture designed for scale .
-
-
-
-- **[Windmill](https://github.com/windmill-labs/windmill)**  
-
-  Fully open-source alternative to Retool for building internal tools and UIs. Supports JavaScript, TypeScript, Python, Go, SQL, and Bash. Includes workflow engine, CLI, and VS Code integration. Self-hostable with transparent pricing .
-
-
-
-- **[Appsmith](https://github.com/appsmithorg/appsmith)**  
-
-  Open-source low-code platform for building internal tools with drag-and-drop UI, API/database connections, and JavaScript logic. Self-hosted alternative to Retool and Power Apps.
-
-
-
-- **[ToolJet](https://github.com/ToolJet/ToolJet)**  
-
-  Open-source low-code framework for building business applications and internal tools. Connects to databases, APIs, and cloud storage with a visual app builder.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Anvil App Server** — The open-source runtime that serves Anvil apps on your own infrastructure, while the hosted service and editor remain proprietary .
-
-- **Streamlit Components** — Community-built extensions for maps, charts, authentication, and more via the Streamlit Components ecosystem.
-
-- **Dash Cytoscape / Dash Bootstrap Components** — Specialized Dash libraries for network graphs and responsive layouts.
-
-- **ShinyProxy** — Open-source tool to deploy Shiny apps using containers onto on-premises or cloud servers .
-
-- **Jupyter + Voilà + JupyterHub** — Stack for turning notebooks into multi-user hosted apps with authentication.
-
-- **Frameworks for building custom systems**: Combine **Streamlit** or **Dash** for the UI layer with **Metabase** or **Superset** for BI, and orchestrate with **Windmill** for workflow automation.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Data application frameworks vary in production readiness; evaluate security, scalability, and maintenance requirements for your use case.
-
-- Self-hosted open-source solutions require proper infrastructure management, authentication, and backup strategies.
-
-
-
----
-
-
-
-**Made for data scientists, analytics engineers, ML practitioners, and full-stack developers.**  
-
-Let's make data application development more open, accessible, and powerful.
